@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index2.html">Home</a>
+        </div>
+        
+        <div class="other-link-bar">
+          <a href="https://www.w3schools.com/html/default.asp">Learn</a>
+          </div>
+          <div class="new-link-bar">
+            <a href="https://github.com/">GITHUB</a>
+          </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          DIZZYGHOSTTECH
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logos2/quip.png" alt="">
+            </div>
+
+            <div class="subtitle">With (html) you can do a lot of things for example settingt the base for You're website</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logos2/devcamp.png" alt="">
+            </div>
+
+            <div class="subtitle">With (Css) you can style all you're Html code</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logos2/eventbrite.png" alt="">
+            </div>
+
+            <div class="subtitle">with JS/javascript you can create a funktion with you're website</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logos2/shop-hacker.png" alt="">
+            </div>
+
+            <div class="subtitle">With (C++) you can mostly do everything for example creating games and more</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logos2/crondose.png" alt="">
+            </div>
+
+            <div class="subtitle">With (JAVA) you can make a lot of android stuff java is mostly used for programing stuff or websites for phones</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logos2/dailysmarty.png" alt="">
+            </div>
+
+            <div class="subtitle">(Flexbox)  Is  not  a  singel  property  it's  a  like  a  key for  (Css)  Flexbox is used for making you're text flex no mather how long the text is and more</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logos2/dashtrack.png" alt="">
+            </div>
+
+            <div class="subtitle">(C++) is used in developing many enterprise software as well as advanced applications like flight simulation and radar processing</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logos2/devtrunk.png" alt="">
+            </div>
+
+            <div class="subtitle">(Grid) is like a blueprint for making websites it's mostly used for keeping elements aligned</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logos2/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">With (swift) you can do server side scripting</div>
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
